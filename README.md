@@ -1,8 +1,6 @@
 <!-- ============ 1. BANNER ============ -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a1128,50:0d47a1,100:1e90ff&height=220&section=header&text=Swapnil%20Singh&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=CSE%20Student%20%7C%20Builder%20%7C%20Learner&descAlignY=58&descSize=20" width="100%" />
-
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=38BDF8&center=true&vCenter=true&width=700&lines=Dream.+Build.+Create.+Impact.;Turning+ideas+into+real+solutions;Discipline+%7C+Learning+%7C+Building+%7C+Growing" alt="typing" />
+  <img src="assets/hero-banner-v2.svg" width="100%" alt="Swapnil Singh - Dream. Build. Create. Impact." />
 </div>
 
 <br/>
