@@ -26,8 +26,9 @@ jobs:
 
       - name: Build assets/stats-section.svg from live GitHub data
         env:
-          # Optional: add a secret named GH_PAT (scope: read:user) to also count private contributions.
-          GITHUB_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional: a secret named GH_PAT (scope: read:user) also counts private contributions.
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: python generate_stats_section.py
 
       - name: Commit if changed

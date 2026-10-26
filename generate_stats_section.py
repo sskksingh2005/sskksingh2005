@@ -63,47 +63,90 @@ def ic(n, x, y, c, s=1.0):
     return f'<g transform="translate({x:.1f},{y:.1f}) scale({s})" fill="none" stroke="{c}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{ICONS[n]}</g>'
 
 # ---------------------------------------------------------------- data
-def gql(query, token):
-    req = urllib.request.Request("https://api.github.com/graphql", data=json.dumps({"query": query}).encode(),
-        headers={"Authorization": f"bearer {token}", "User-Agent": "stats-section", "Content-Type": "application/json"})
+def _tokens():
+    return [t for t in (os.environ.get("GH_PAT"), os.environ.get("GITHUB_TOKEN"), os.environ.get("GH_TOKEN")) if t]
+
+def _call(url, token, body=None):
+    h = {"User-Agent": "stats-section", "Accept": "application/vnd.github+json"}
+    if token: h["Authorization"] = f"bearer {token}"
+    if body is not None: h["Content-Type"] = "application/json"
+    req = urllib.request.Request(url, data=json.dumps(body).encode() if body is not None else None, headers=h)
     with urllib.request.urlopen(req, timeout=40) as r:
-        out = json.loads(r.read().decode())
-    if out.get("data") is None:
-        raise RuntimeError(f"GraphQL error: {out.get('errors')}")
-    return out["data"]
+        return json.loads(r.read().decode())
+
+def gql(query):
+    err = RuntimeError("no GitHub token found in the workflow environment")
+    for t in _tokens():
+        try:
+            out = _call("https://api.github.com/graphql", t, {"query": query})
+            if out.get("data") is None:
+                raise RuntimeError(f"GraphQL said: {out.get('errors')}")
+            return out["data"]
+        except Exception as e:
+            err = e
+    raise err
+
+def rest(path):
+    err = None
+    for t in _tokens() + [None]:
+        try:
+            return _call("https://api.github.com" + path, t)
+        except Exception as e:
+            err = e
+    raise err
 
 def fetch():
-    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
-    if not token: raise RuntimeError("no token in environment")
     now = dt.datetime.now(dt.timezone.utc)
-    u = gql(f'''{{ user(login:"{USERNAME}") {{ createdAt followers {{ totalCount }} following {{ totalCount }}
-        all: repositories(privacy: PUBLIC, ownerAffiliations: OWNER) {{ totalCount }}
-        own: repositories(privacy: PUBLIC, ownerAffiliations: OWNER, isFork: false, first: 100) {{
-            nodes {{ stargazerCount languages(first: 10, orderBy: {{field: SIZE, direction: DESC}}) {{ edges {{ size node {{ name color }} }} }} }} }} }} }}''', token)["user"]
-    stars = sum(n["stargazerCount"] for n in u["own"]["nodes"])
-    langs = {}
-    for n in u["own"]["nodes"]:
-        for e in n["languages"]["edges"]:
-            nm = e["node"]["name"]
-            if nm in EXCLUDE_LANGS: continue
-            cur = langs.setdefault(nm, [0, e["node"]["color"] or "#8b949e"]); cur[0] += e["size"]
-    top = sorted(langs.items(), key=lambda kv: -kv[1][0])[:MAX_LANGS]
-    tot = sum(v[0] for _, v in top) or 1
-    langs = [(k, v[0] / tot * 100, v[1]) for k, v in top]
-    parts = []
-    for y in range(int(u["createdAt"][:4]), now.year + 1):
-        to = now.strftime("%Y-%m-%dT%H:%M:%SZ") if y == now.year else f"{y}-12-31T23:59:59Z"
-        parts.append(f'y{y}: contributionsCollection(from:"{y}-01-01T00:00:00Z", to:"{to}") {{ totalCommitContributions '
-                     f'restrictedContributionsCount contributionCalendar {{ weeks {{ contributionDays {{ date contributionCount }} }} }} }}')
-    cc = gql(f'{{ user(login:"{USERNAME}") {{ {" ".join(parts)} }} }}', token)["user"]
-    commits, days = 0, {}
-    for col in cc.values():
-        commits += col["totalCommitContributions"] + col["restrictedContributionsCount"]
-        for w in col["contributionCalendar"]["weeks"]:
-            for d in w["contributionDays"]:
-                days[dt.date.fromisoformat(d["date"])] = d["contributionCount"]
-    return dict(commits=commits, repos=u["all"]["totalCount"], stars=stars, followers=u["followers"]["totalCount"],
-                following=u["following"]["totalCount"], days=days, langs=langs, updated=now.strftime("%d %b %Y"))
+    d = dict(updated=now.strftime("%d %b %Y"), repos=None, followers=None, following=None, stars=None,
+             commits=None, days=None, langs=None)
+    errs = []
+    # 1) basic numbers (plain REST - works even with no token)
+    try:
+        u = rest(f"/users/{USERNAME}")
+        d.update(followers=u["followers"], following=u["following"], repos=u["public_repos"])
+    except Exception as e:
+        errs.append(f"profile numbers: {e}")
+    # 2) stars + languages
+    try:
+        q = gql(f'''{{ user(login:"{USERNAME}") {{ all: repositories(privacy: PUBLIC, ownerAffiliations: OWNER) {{ totalCount }}
+            own: repositories(privacy: PUBLIC, ownerAffiliations: OWNER, isFork: false, first: 100) {{
+                nodes {{ stargazerCount languages(first: 10, orderBy: {{field: SIZE, direction: DESC}}) {{ edges {{ size node {{ name color }} }} }} }} }} }} }}''')["user"]
+        d["repos"] = q["all"]["totalCount"]
+        d["stars"] = sum(n["stargazerCount"] for n in q["own"]["nodes"])
+        langs = {}
+        for n in q["own"]["nodes"]:
+            for e in n["languages"]["edges"]:
+                nm = e["node"]["name"]
+                if nm in EXCLUDE_LANGS: continue
+                cur = langs.setdefault(nm, [0, e["node"]["color"] or "#8b949e"]); cur[0] += e["size"]
+        top = sorted(langs.items(), key=lambda kv: -kv[1][0])[:MAX_LANGS]
+        tot = sum(v[0] for _, v in top) or 1
+        d["langs"] = [(k, v[0] / tot * 100, v[1]) for k, v in top]
+    except Exception as e:
+        errs.append(f"stars/languages: {e}")
+    # 3) contributions (commits, streaks)
+    try:
+        created = gql(f'{{ user(login:"{USERNAME}") {{ createdAt }} }}')["user"]["createdAt"]
+        parts = []
+        for y in range(int(created[:4]), now.year + 1):
+            to = now.strftime("%Y-%m-%dT%H:%M:%SZ") if y == now.year else f"{y}-12-31T23:59:59Z"
+            parts.append(f'y{y}: contributionsCollection(from:"{y}-01-01T00:00:00Z", to:"{to}") {{ totalCommitContributions '
+                         f'restrictedContributionsCount contributionCalendar {{ weeks {{ contributionDays {{ date contributionCount }} }} }} }}')
+        cc = gql(f'{{ user(login:"{USERNAME}") {{ {" ".join(parts)} }} }}')["user"]
+        commits, days = 0, {}
+        for col in cc.values():
+            commits += col["totalCommitContributions"] + col["restrictedContributionsCount"]
+            for w in col["contributionCalendar"]["weeks"]:
+                for x in w["contributionDays"]:
+                    days[dt.date.fromisoformat(x["date"])] = x["contributionCount"]
+        d["commits"], d["days"] = commits, days
+    except Exception as e:
+        errs.append(f"contributions/streak: {e}")
+    for e in errs:
+        print(f"::warning::{e}")
+    if all(d[k] is None for k in ("repos", "stars", "commits", "langs")):
+        raise RuntimeError(" | ".join(errs) or "nothing could be fetched")
+    return d
 
 def streak_info(days):
     today = dt.datetime.now(dt.timezone.utc).date(); one = dt.timedelta(days=1)
@@ -149,19 +192,24 @@ def render(d):
 .gx{{transform-box:fill-box;transform-origin:0 50%;animation:gx 1.2s cubic-bezier(.2,.8,.2,1) both}}@keyframes gx{{from{{transform:scaleX(0)}}to{{transform:scaleX(1)}}}}
 .fl{{transform-box:fill-box;transform-origin:50% 100%;animation:fl 2.6s ease-in-out infinite}}@keyframes fl{{0%,100%{{transform:scale(1)}}50%{{transform:scale(1.08,1.12)}}}}
 @media (prefers-reduced-motion: reduce){{*{{animation:none!important}}.pn{{opacity:1}}}}</style></defs>''']
-    rnd = random.Random(5)
+    pid = [0]
     def panel(x, y, w, h, delay, inner):
-        stars = "".join(f'<circle class="st" cx="{x+rnd.uniform(14,w-14):.0f}" cy="{y+rnd.uniform(10,h-10):.0f}" r="{rnd.choice([.7,1,1.3])}" fill="#fff" style="animation-delay:{rnd.uniform(0,4):.1f}s"/>' for _ in range(int(w/22)))
-        return (f'<g class="pn" style="animation-delay:{delay}s"><rect x="{x}" y="{y}" width="{w}" height="{h}" rx="22" fill="url(#pg)" stroke="{BORDER}" stroke-width="1.4"/>'
-                f'<circle cx="{x+w-60}" cy="{y+h-20}" r="150" fill="url(#gp)"/>{stars}{inner}</g>')
+        pid[0] += 1; cid = f"pc{pid[0]}"
+        return (f'<g class="pn" style="animation-delay:{delay}s"><clipPath id="{cid}"><rect x="{x}" y="{y}" width="{w}" height="{h}" rx="22"/></clipPath>'
+                f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="22" fill="url(#pg)"/>'
+                f'<g clip-path="url(#{cid})"><circle cx="{x+w-60}" cy="{y+h-20}" r="150" fill="url(#gp)"/><circle cx="{x+60}" cy="{y+20}" r="120" fill="url(#gb)"/></g>'
+                f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="22" fill="none" stroke="{BORDER}" stroke-width="1.4"/>{inner}</g>')
     dash = "-"
     # ================= GitHub Stats
+    d = d or None
+    g = (lambda k: d.get(k) if d else None)
+    num = lambda v: None if v is None else f"{v:,}"
     cap = f"public data - updated {d['updated']}" if d else "data unavailable"
     s = [f'<g transform="translate(40,38) scale(.9) translate(-12,-12)" fill="{TXT}"><path d="{GH}"/></g>',
          text("GitHub Stats", "B", 17, 62, 44, TXT), text(cap, "R", 11.5, 10 + 700 - 22, 43, MUTED, "e")]
-    items = [("commit", "Commits", d and f"{d['commits']:,}"), ("repo", "Repositories", d and str(d["repos"])),
-             ("star", "Stars earned", d and str(d["stars"])), ("users", "Followers", d and str(d["followers"])),
-             ("userplus", "Following", d and str(d["following"]))]
+    items = [("commit", "Commits", num(g("commits"))), ("repo", "Repositories", num(g("repos"))),
+             ("star", "Stars earned", num(g("stars"))), ("users", "Followers", num(g("followers"))),
+             ("userplus", "Following", num(g("following")))]
     cw = (700 - 44 - 4 * 10) / 5
     for i, (k, lab, val) in enumerate(items):
         x = 10 + 22 + i * (cw + 10); y = 60
@@ -175,7 +223,7 @@ def render(d):
     cols = [px + 22 + 55 + i * 110 for i in range(3)]
     for i in (1, 2):
         k.append(f'<line x1="{px+22+i*110}" y1="62" x2="{px+22+i*110}" y2="136" stroke="{BORDER}" stroke-width="1"/>')
-    if d:
+    if g("days") is not None:
         si = streak_info(d["days"]); t = si["today"]
         vals = [(str(si["total"]), "Contributions", "Past 12 months", TXT),
                 (str(si["cur"]), "Current Streak", rng(*si["cur_range"], t) if si["cur"] else "No active streak", CYAN),
@@ -195,7 +243,7 @@ def render(d):
     y0 = 160; L = [f'<g transform="translate(40,{y0+30})">{ic("code", 0, 0, CYAN, 1.0)}</g>',
                    text("Most Used Languages", "B", 17, 62, y0 + 36, TXT),
                    text("by code size - public repositories", "R", 11.5, 10 + 1080 - 22, y0 + 35, MUTED, "e")]
-    langs = d["langs"] if d else []
+    langs = g("langs")
     L.append(f'<rect x="34" y="{y0+52}" width="1032" height="14" rx="7" fill="#0d1b38"/>')
     if langs:
         seg, x = [], 34
@@ -211,7 +259,7 @@ def render(d):
             L.append(f'<circle cx="{lx+6}" cy="{ly-5}" r="6" fill="{col}"/>')
             L.append(text(label, "R", 13.5, lx + 20, ly, "#d8e4f6")); lx += wd + 14
     else:
-        L.append(text("No language data yet" if d else "data unavailable", "R", 13.5, 34, y0 + 92, MUTED))
+        L.append(text("No language data yet" if langs == [] else "data unavailable", "R", 13.5, 34, y0 + 92, MUTED))
     o.append(panel(10, y0, 1080, 114 + 6, .24, "".join(L)))
     o.append("</svg>")
     svg = "\n".join(o).replace('clip-path="url(#barclip2)"', f'clip-path="url(#barclip)"')
@@ -227,10 +275,14 @@ def main():
         data = fetch()
     except Exception as e:
         print("FETCH FAILED:", e)
-        if OUT.exists(): print("keeping previous file"); return
-        OUT.parent.mkdir(exist_ok=True); OUT.write_text(render(None)); return
+        if not OUT.exists():
+            OUT.parent.mkdir(exist_ok=True); OUT.write_text(render(None))
+        if os.environ.get("GITHUB_ACTIONS"):
+            print("::error::Could not read data from GitHub - see the FETCH FAILED line above")
+            sys.exit(1)
+        return
     OUT.parent.mkdir(exist_ok=True); OUT.write_text(render(data))
-    print("stats-section.svg updated:", data["commits"], "commits,", len(data["langs"]), "languages")
+    print("stats-section.svg updated:", data["commits"], "commits,", len(data["langs"] or []), "languages")
 
 if __name__ == "__main__":
     main()
