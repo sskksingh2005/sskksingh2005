@@ -69,3 +69,11 @@
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e90ff,50:0d47a1,100:0a1128&height=120&section=footer&text=Good%20Code%2C%20Brighter%20Tomorrows&fontSize=24&fontColor=ffffff&fontAlignY=65" width="100%" />
+
+
+
+<h2 align="center">🐍 My GitHub Contribution Snake</h2>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/sskksingh2005/sskksingh2005/output/github-snake.svg" alt="GitHub Contribution Snake" />
+</p>
