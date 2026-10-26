@@ -1,16 +1,71 @@
-## Hi there 👋
+<!-- ============ 1. BANNER ============ -->
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a1128,50:0d47a1,100:1e90ff&height=220&section=header&text=Swapnil%20Singh&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=CSE%20Student%20%7C%20Builder%20%7C%20Learner&descAlignY=58&descSize=20" width="100%" />
 
-<!--
-**sskksingh2005/sskksingh2005** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=38BDF8&center=true&vCenter=true&width=700&lines=Dream.+Build.+Create.+Impact.;Turning+ideas+into+real+solutions;Discipline+%7C+Learning+%7C+Building+%7C+Growing" alt="typing" />
+</div>
 
-Here are some ideas to get you started:
+<br/>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<!-- ============ 2. INTRO ROW ============ -->
+<table align="center" width="100%">
+  <tr>
+    <td width="25%" align="center">
+      <img src="assets/profile.png" width="200" alt="Swapnil" />
+    </td>
+    <td width="75%">
+      <h2>👋 Hi, I'm Swapnil Singh</h2>
+      <p>3rd year CSE student passionate about building impactful tech solutions. I love solving real-world problems, learning new technologies, and turning creative ideas into products.</p>
+      <p>📍 Dehradun, India &nbsp;|&nbsp; 🎯 AI/ML • Hackathons • Open Source</p>
+      <p>🎮 Gaming &nbsp; 🏓 Table Tennis &nbsp; 📚 Reading &nbsp; ✈️ Travel</p>
+    </td>
+  </tr>
+</table>
+
+<!-- ============ 3. STATS ROW (3 cards side by side) ============ -->
+<div align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=sskksingh2005&show_icons=true&bg_color=0a1128&title_color=38bdf8&icon_color=38bdf8&text_color=c9d1d9&border_color=1e90ff&count_private=true" />
+  <img height="170" src="https://streak-stats.demolab.com?user=sskksingh2005&background=0a1128&ring=38bdf8&fire=ff9800&currStreakLabel=38bdf8&border=1e90ff&sideLabels=c9d1d9&currStreakNum=ffffff&sideNums=ffffff&dates=8b949e" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sskksingh2005&layout=compact&bg_color=0a1128&title_color=38bdf8&text_color=c9d1d9&border_color=1e90ff" />
+</div>
+
+<!-- ============ 4. FEATURED PROJECTS (3 side by side) ============ -->
+<h3 align="center">🚀 Featured Projects</h3>
+<div align="center">
+  <a href="https://github.com/sskksingh2005/FixAura">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=sskksingh2005&repo=FixAura&bg_color=0a1128&title_color=38bdf8&text_color=c9d1d9&border_color=1e90ff&icon_color=38bdf8" />
+  </a>
+  <a href="https://github.com/sskksingh2005/RaahPrahari">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=sskksingh2005&repo=RaahPrahari&bg_color=0a1128&title_color=38bdf8&text_color=c9d1d9&border_color=1e90ff&icon_color=38bdf8" />
+  </a>
+  <a href="https://github.com/sskksingh2005/Sakshya">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=sskksingh2005&repo=Sakshya&bg_color=0a1128&title_color=38bdf8&text_color=c9d1d9&border_color=1e90ff&icon_color=38bdf8" />
+  </a>
+</div>
+
+<!-- ============ 5. TECH STACK (one line) ============ -->
+<h3 align="center">🛠️ Tech Stack</h3>
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=java,py,js,react,nextjs,nodejs,express,supabase,postgres,docker,aws,git,tailwind,figma,vscode&perline=15" />
+</div>
+
+<!-- ============ 6. CONTRIBUTIONS ============ -->
+<h3 align="center">📈 Contribution Activity</h3>
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=sskksingh2005&bg_color=0a1128&color=38bdf8&line=1e90ff&point=ffffff&area=true&hide_border=true" width="100%" />
+</div>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/sskksingh2005/sskksingh2005/output/github-contribution-grid-snake-dark.svg" width="100%" />
+</div>
+
+<!-- ============ 7. CONNECT ============ -->
+<h3 align="center">🤝 Let's Connect</h3>
+<div align="center">
+  <a href="https://linkedin.com/in/YOUR_LINKEDIN_ID"><img src="https://img.shields.io/badge/LinkedIn-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="mailto:YOUR_EMAIL"><img src="https://img.shields.io/badge/Email-ea4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://x.com/YOUR_X_HANDLE"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" /></a>
+  <a href="https://youtube.com/@YOUR_CHANNEL"><img src="https://img.shields.io/badge/YouTube-ff0000?style=for-the-badge&logo=youtube&logoColor=white" /></a>
+</div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e90ff,50:0d47a1,100:0a1128&height=120&section=footer&text=Good%20Code%2C%20Brighter%20Tomorrows&fontSize=24&fontColor=ffffff&fontAlignY=65" width="100%" />
