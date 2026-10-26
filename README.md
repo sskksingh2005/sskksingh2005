@@ -5,20 +5,16 @@
 
 <br/>
 
-<!-- ============ 2. INTRO ROW ============ -->
-<table align="center" width="100%">
-  <tr>
-    <td width="25%" align="center">
-      <img src="assets/profile.png" width="200" alt="Swapnil" />
-    </td>
-    <td width="75%">
-      <h2>👋 Hi, I'm Swapnil Singh</h2>
-      <p>3rd year CSE student passionate about building impactful tech solutions. I love solving real-world problems, learning new technologies, and turning creative ideas into products.</p>
-      <p>📍 Dehradun, India &nbsp;|&nbsp; 🎯 AI/ML • Hackathons • Open Source</p>
-      <p>🎮 Gaming &nbsp; 🏓 Table Tennis &nbsp; 📚 Reading &nbsp; ✈️ Travel</p>
-    </td>
-  </tr>
-</table>
+<!-- ============ 2. PROFILE CARD ============ -->
+<div align="center">
+  <img src="assets/profile-card.svg" width="100%" alt="Swapnil Singh - CSE Student | Builder | Learner" />
+</div>
+
+<div align="center">
+  <a href="https://linkedin.com/in/sskksingh"><img src="assets/btn-connect.svg" height="50" alt="Connect on LinkedIn" /></a>
+  &nbsp;&nbsp;
+  <a href="mailto:swapnilsingh2005@gmail.com"><img src="assets/btn-message.svg" height="50" alt="Email me" /></a>
+</div>
 
 <!-- ============ 3. STATS ROW (3 cards side by side) ============ -->
 <div align="center">
