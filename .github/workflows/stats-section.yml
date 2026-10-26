@@ -1,1 +1,41 @@
+name: Update stats section
 
+on:
+  schedule:
+    - cron: "0 */6 * * *"      # every 6 hours
+  workflow_dispatch:            # manual "Run workflow" button
+  push:
+    branches: [main]
+    paths:
+      - "generate_stats_section.py"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install fonttools
+
+      - name: Build assets/stats-section.svg from live GitHub data
+        env:
+          # Optional: add a secret named GH_PAT (scope: read:user) to also count private contributions.
+          GITHUB_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+        run: python generate_stats_section.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/stats-section.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update stats section"
+            git push
+          fi

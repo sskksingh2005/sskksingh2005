@@ -16,13 +16,11 @@
   <a href="mailto:swapnilsingh2005@gmail.com"><img src="assets/btn-message.svg" height="50" alt="Email me" /></a>
 </div>
 
-<!-- ============ 3. STATS ROW (3 cards side by side) ============ -->
-<div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=sskksingh2005&show_icons=true&bg_color=0a1128&title_color=38bdf8&icon_color=38bdf8&text_color=c9d1d9&border_color=1e90ff&count_private=true" />
-  <img height="170" src="https://streak-stats.demolab.com?user=sskksingh2005&background=0a1128&ring=38bdf8&fire=ff9800&currStreakLabel=38bdf8&border=1e90ff&sideLabels=c9d1d9&currStreakNum=ffffff&sideNums=ffffff&dates=8b949e" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sskksingh2005&layout=compact&bg_color=0a1128&title_color=38bdf8&text_color=c9d1d9&border_color=1e90ff" />
-</div>
+<br/>
 
+<div align="center">
+  <img src="assets/stats-section.svg" width="100%" alt="GitHub stats, contribution streak and most used languages" />
+</div>
 <!-- ============ 4. FEATURED PROJECTS (3 side by side) ============ -->
 <h3 align="center">🚀 Featured Projects</h3>
 <div align="center">
