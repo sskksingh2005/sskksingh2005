@@ -22,12 +22,26 @@
   <img src="assets/stats-section.svg" width="100%" alt="GitHub stats, contribution streak and most used languages" />
 </div>
 <!-- ============ 4. FEATURED PROJECTS (3 side by side) ============ -->
-<h3 align="center">🚀 Featured Projects</h3>
+### 🚀 Featured Projects
+
 <div align="center">
-  <a href="https://github.com/sskksingh2005/Kalakriti-Plus"><img src="assets/projects/kalakriti.svg" width="100%" alt="Kalakriti+" /></a>
-  <a href="https://github.com/sskksingh2005/RaahPrahari"><img src="assets/projects/raahprahari.svg" width="100%" alt="RaahPrahari" /></a>
-  <a href="https://github.com/sskksingh2005/Sakshya"><img src="assets/projects/sakshya.svg" width="100%" alt="Sakshya" /></a>
-  <a href="https://github.com/sskksingh2005/FixAura"><img src="assets/projects/fixaura.svg" width="100%" alt="FixAura" /></a>
+
+  <a href="https://github.com/sskksingh2005/Kalakriti-Plus">
+    <img src="assets/projects/kalakriti.svg" width="100%" alt="Kalakriti+" />
+  </a>
+
+  <a href="https://github.com/sskksingh2005/RaahPrahari">
+    <img src="assets/projects/raahprahari.svg" width="100%" alt="RaahPrahari" />
+  </a>
+
+  <a href="https://github.com/sskksingh2005/Sakshya">
+    <img src="assets/projects/sakshya.svg" width="100%" alt="Sakshya" />
+  </a>
+
+  <a href="https://github.com/sskksingh2005/FixAura">
+    <img src="assets/projects/fixaura.svg" width="100%" alt="FixAura" />
+  </a>
+
 </div>
 
 <!-- ============ 5. TECH STACK (one line) ============ -->
