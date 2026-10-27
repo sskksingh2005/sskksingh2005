@@ -24,15 +24,10 @@
 <!-- ============ 4. FEATURED PROJECTS (3 side by side) ============ -->
 <h3 align="center">🚀 Featured Projects</h3>
 <div align="center">
-  <a href="https://github.com/sskksingh2005/FixAura">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=sskksingh2005&repo=FixAura&bg_color=0a1128&title_color=38bdf8&text_color=c9d1d9&border_color=1e90ff&icon_color=38bdf8" />
-  </a>
-  <a href="https://github.com/sskksingh2005/RaahPrahari">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=sskksingh2005&repo=RaahPrahari&bg_color=0a1128&title_color=38bdf8&text_color=c9d1d9&border_color=1e90ff&icon_color=38bdf8" />
-  </a>
-  <a href="https://github.com/sskksingh2005/Sakshya">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=sskksingh2005&repo=Sakshya&bg_color=0a1128&title_color=38bdf8&text_color=c9d1d9&border_color=1e90ff&icon_color=38bdf8" />
-  </a>
+  <a href="https://github.com/sskksingh2005/Kalakriti-Plus"><img src="assets/projects/kalakriti.svg" width="100%" alt="Kalakriti+" /></a>
+  <a href="https://github.com/sskksingh2005/RaahPrahari"><img src="assets/projects/raahprahari.svg" width="100%" alt="RaahPrahari" /></a>
+  <a href="https://github.com/sskksingh2005/Sakshya"><img src="assets/projects/sakshya.svg" width="100%" alt="Sakshya" /></a>
+  <a href="https://github.com/sskksingh2005/FixAura"><img src="assets/projects/fixaura.svg" width="100%" alt="FixAura" /></a>
 </div>
 
 <!-- ============ 5. TECH STACK (one line) ============ -->
