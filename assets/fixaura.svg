@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="150" viewBox="0 0 900 150" role="img" aria-label="FixAura - AI home-repair assistant with AR guidance">
+<title>FixAura - AI home-repair assistant with AR guidance</title>
+<defs>
+  <linearGradient id="Cb" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0a1128"/><stop offset="1" stop-color="#0d1b3d"/></linearGradient>
+  <linearGradient id="Ct" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#6366f1"/></linearGradient>
+  <radialGradient id="Chalo" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#38bdf8" stop-opacity=".22"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/></radialGradient>
+</defs>
+<style>
+  text{font-family:'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif}
+  .name{font-size:30px;font-weight:800;fill:url(#Ct)}
+  .desc{font-size:16px;fill:#c9d1d9}
+  .chip{font-family:'SFMono-Regular',Consolas,'Liberation Mono',monospace;font-size:12px;fill:#e6edf3}
+  .num{font-size:64px;font-weight:800;fill:#fff;fill-opacity:.06}
+  .cta{font-size:14px;font-weight:600;fill:#38bdf8}
+  .sweep{fill:none;stroke:url(#Ct);stroke-width:2.5;stroke-linecap:round;stroke-dasharray:70 930;animation:sw 6s linear infinite}
+  @keyframes sw{to{stroke-dashoffset:-1000}}
+  .arrow{animation:ar 1.6s ease-in-out infinite}@keyframes ar{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}
+  
+  .a{animation:wa 3s ease-in-out infinite}.b{animation:wa 3s ease-in-out 1.5s infinite}
+  @keyframes wa{0%,100%{opacity:.25}50%{opacity:.75}}
+  .pulse{transform-box:fill-box;transform-origin:center;animation:pl 2.4s ease-in-out infinite}
+  @keyframes pl{0%,100%{transform:scale(1)}50%{transform:scale(1.22)}}
+  .road{animation:rd 1.2s linear infinite}@keyframes rd{to{stroke-dashoffset:-11}}
+  .ping{transform-box:fill-box;transform-origin:center;animation:pg 2s ease-out infinite}
+  @keyframes pg{0%{transform:scale(.7);opacity:.9}100%{transform:scale(2.6);opacity:0}}
+  .blink{transform-box:fill-box;transform-origin:center;animation:bk 5s infinite}
+  @keyframes bk{0%,90%,100%{transform:scaleY(1)}94%{transform:scaleY(.08)}}
+  .spin{transform-box:fill-box;transform-origin:center;animation:sp 14s linear infinite}
+  .spinr{transform-box:fill-box;transform-origin:center;animation:sp 20s linear infinite reverse}
+  @keyframes sp{to{transform:rotate(360deg)}}
+  .brk{transform-box:fill-box;transform-origin:center;animation:bb 2.6s ease-in-out infinite}
+  @keyframes bb{0%,100%{transform:scale(1)}50%{transform:scale(.92)}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect x="1" y="1" width="898" height="148" rx="20" fill="url(#Cb)"/>
+<circle cx="825" cy="75" r="95" fill="url(#Chalo)"/>
+<rect x="1" y="1" width="898" height="148" rx="20" fill="none" stroke="#38bdf8" stroke-opacity=".3" stroke-width="1.5"/>
+<rect class="sweep" x="1" y="1" width="898" height="148" rx="20" pathLength="1000"/>
+<g transform="translate(770 20) scale(.9167)"><defs>
+    <linearGradient id="Cg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#6366f1"/></linearGradient>
+    <radialGradient id="Cglow" cx=".5" cy=".5" r=".6"><stop offset="0" stop-color="#38bdf8" stop-opacity=".35"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/></radialGradient>
+    <clipPath id="Cclip"><rect x="6" y="6" width="108" height="108" rx="24"/></clipPath>
+  </defs>
+  <rect width="120" height="120" rx="28" fill="#0a1128"/>
+  <rect width="120" height="120" rx="28" fill="url(#Cglow)"/>
+  <rect x="1" y="1" width="118" height="118" rx="27" fill="none" stroke="url(#Cg)" stroke-opacity=".65" stroke-width="2"/>
+  
+    <circle class="spin" cx="60" cy="60" r="52" fill="none" stroke="url(#Cg)" stroke-width="2" stroke-dasharray="6 10" stroke-linecap="round" opacity=".8"/>
+    <circle class="spinr" cx="60" cy="60" r="44" fill="none" stroke="url(#Cg)" stroke-width="1.5" stroke-dasharray="2 8" stroke-linecap="round" opacity=".6"/>
+    <g class="brk" fill="none" stroke="url(#Cg)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 36V22H36"/><path d="M84 22H98V36"/><path d="M98 84V98H84"/><path d="M36 98H22V84"/>
+    </g>
+    <g fill="none" stroke="url(#Cg)" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M40 82L66 56" stroke-width="9"/>
+      <circle cx="73" cy="49" r="12" stroke-width="7"/>
+    </g>
+    <path d="M73 49L84 37L90 45Z" fill="#0a1128"/></g>
+<text x="40" y="56" class="name">FixAura</text>
+<text x="40" y="84" class="desc">AI home-repair assistant with AR guidance</text>
+<g><rect x="40" y="100" width="61" height="24" rx="12" fill="#38bdf8" fill-opacity=".12" stroke="#38bdf8" stroke-opacity=".4"/>
+      <text x="70.5" y="116" text-anchor="middle" class="chip">React</text></g><g><rect x="109" y="100" width="68" height="24" rx="12" fill="#38bdf8" fill-opacity=".12" stroke="#38bdf8" stroke-opacity=".4"/>
+      <text x="143" y="116" text-anchor="middle" class="chip">OpenAI</text></g><g><rect x="185" y="100" width="83" height="24" rx="12" fill="#38bdf8" fill-opacity=".12" stroke="#38bdf8" stroke-opacity=".4"/>
+      <text x="226.5" y="116" text-anchor="middle" class="chip">Tailwind</text></g>
+<text x="740" y="78" text-anchor="end" class="num">04</text>
+<text x="740" y="124" text-anchor="end" class="cta">View project <tspan class="arrow">→</tspan></text>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 120 120" role="img" aria-label="FixAura logo"><style>
+  .a{animation:wa 3s ease-in-out infinite}.b{animation:wa 3s ease-in-out 1.5s infinite}
+  @keyframes wa{0%,100%{opacity:.25}50%{opacity:.75}}
+  .pulse{transform-box:fill-box;transform-origin:center;animation:pl 2.4s ease-in-out infinite}
+  @keyframes pl{0%,100%{transform:scale(1)}50%{transform:scale(1.22)}}
+  .road{animation:rd 1.2s linear infinite}@keyframes rd{to{stroke-dashoffset:-11}}
+  .ping{transform-box:fill-box;transform-origin:center;animation:pg 2s ease-out infinite}
+  @keyframes pg{0%{transform:scale(.7);opacity:.9}100%{transform:scale(2.6);opacity:0}}
+  .blink{transform-box:fill-box;transform-origin:center;animation:bk 5s infinite}
+  @keyframes bk{0%,90%,100%{transform:scaleY(1)}94%{transform:scaleY(.08)}}
+  .spin{transform-box:fill-box;transform-origin:center;animation:sp 14s linear infinite}
+  .spinr{transform-box:fill-box;transform-origin:center;animation:sp 20s linear infinite reverse}
+  @keyframes sp{to{transform:rotate(360deg)}}
+  .brk{transform-box:fill-box;transform-origin:center;animation:bb 2.6s ease-in-out infinite}
+  @keyframes bb{0%,100%{transform:scale(1)}50%{transform:scale(.92)}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}</style><defs>
+    <linearGradient id="Lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#6366f1"/></linearGradient>
+    <radialGradient id="Lglow" cx=".5" cy=".5" r=".6"><stop offset="0" stop-color="#38bdf8" stop-opacity=".35"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/></radialGradient>
+    <clipPath id="Lclip"><rect x="6" y="6" width="108" height="108" rx="24"/></clipPath>
+  </defs>
+  <rect width="120" height="120" rx="28" fill="#0a1128"/>
+  <rect width="120" height="120" rx="28" fill="url(#Lglow)"/>
+  <rect x="1" y="1" width="118" height="118" rx="27" fill="none" stroke="url(#Lg)" stroke-opacity=".65" stroke-width="2"/>
+  
+    <circle class="spin" cx="60" cy="60" r="52" fill="none" stroke="url(#Lg)" stroke-width="2" stroke-dasharray="6 10" stroke-linecap="round" opacity=".8"/>
+    <circle class="spinr" cx="60" cy="60" r="44" fill="none" stroke="url(#Lg)" stroke-width="1.5" stroke-dasharray="2 8" stroke-linecap="round" opacity=".6"/>
+    <g class="brk" fill="none" stroke="url(#Lg)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 36V22H36"/><path d="M84 22H98V36"/><path d="M98 84V98H84"/><path d="M36 98H22V84"/>
+    </g>
+    <g fill="none" stroke="url(#Lg)" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M40 82L66 56" stroke-width="9"/>
+      <circle cx="73" cy="49" r="12" stroke-width="7"/>
+    </g>
+    <path d="M73 49L84 37L90 45Z" fill="#0a1128"/></svg>

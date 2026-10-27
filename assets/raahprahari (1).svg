@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 120 120" role="img" aria-label="RaahPrahari logo"><style>
+  .a{animation:wa 3s ease-in-out infinite}.b{animation:wa 3s ease-in-out 1.5s infinite}
+  @keyframes wa{0%,100%{opacity:.25}50%{opacity:.75}}
+  .pulse{transform-box:fill-box;transform-origin:center;animation:pl 2.4s ease-in-out infinite}
+  @keyframes pl{0%,100%{transform:scale(1)}50%{transform:scale(1.22)}}
+  .road{animation:rd 1.2s linear infinite}@keyframes rd{to{stroke-dashoffset:-11}}
+  .ping{transform-box:fill-box;transform-origin:center;animation:pg 2s ease-out infinite}
+  @keyframes pg{0%{transform:scale(.7);opacity:.9}100%{transform:scale(2.6);opacity:0}}
+  .blink{transform-box:fill-box;transform-origin:center;animation:bk 5s infinite}
+  @keyframes bk{0%,90%,100%{transform:scaleY(1)}94%{transform:scaleY(.08)}}
+  .spin{transform-box:fill-box;transform-origin:center;animation:sp 14s linear infinite}
+  .spinr{transform-box:fill-box;transform-origin:center;animation:sp 20s linear infinite reverse}
+  @keyframes sp{to{transform:rotate(360deg)}}
+  .brk{transform-box:fill-box;transform-origin:center;animation:bb 2.6s ease-in-out infinite}
+  @keyframes bb{0%,100%{transform:scale(1)}50%{transform:scale(.92)}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}</style><defs>
+    <linearGradient id="Lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#10b981"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+    <radialGradient id="Lglow" cx=".5" cy=".5" r=".6"><stop offset="0" stop-color="#10b981" stop-opacity=".35"/><stop offset="1" stop-color="#10b981" stop-opacity="0"/></radialGradient>
+    <clipPath id="Lclip"><rect x="6" y="6" width="108" height="108" rx="24"/></clipPath>
+  </defs>
+  <rect width="120" height="120" rx="28" fill="#0a1128"/>
+  <rect width="120" height="120" rx="28" fill="url(#Lglow)"/>
+  <rect x="1" y="1" width="118" height="118" rx="27" fill="none" stroke="url(#Lg)" stroke-opacity=".65" stroke-width="2"/>
+  
+    <clipPath id="Lshield"><path d="M60 12L102 27V60C102 84 84 101 60 110 36 101 18 84 18 60V27Z"/></clipPath>
+    <path d="M60 12L102 27V60C102 84 84 101 60 110 36 101 18 84 18 60V27Z" fill="url(#Lg)" fill-opacity=".12" stroke="url(#Lg)" stroke-width="4" stroke-linejoin="round"/>
+    <g clip-path="url(#Lshield)" fill="none">
+      <path d="M60 116C30 96 92 82 60 62C44 52 70 44 62 30" stroke="#0f3b3a" stroke-width="13" stroke-linecap="round"/>
+      <path class="road" d="M60 116C30 96 92 82 60 62C44 52 70 44 62 30" stroke="#e6fffa" stroke-width="1.8" stroke-dasharray="5 6" stroke-linecap="round"/>
+    </g>
+    <circle class="ping" cx="62" cy="28" r="6" fill="none" stroke="url(#Lg)" stroke-width="2"/>
+    <circle cx="62" cy="28" r="4.5" fill="url(#Lg)"/></svg>

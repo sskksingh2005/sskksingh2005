@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="150" viewBox="0 0 900 150" role="img" aria-label="RaahPrahari - Hill-road safety and community reports">
+<title>RaahPrahari - Hill-road safety and community reports</title>
+<defs>
+  <linearGradient id="Cb" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0a1128"/><stop offset="1" stop-color="#0d1b3d"/></linearGradient>
+  <linearGradient id="Ct" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#10b981"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+  <radialGradient id="Chalo" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#10b981" stop-opacity=".22"/><stop offset="1" stop-color="#10b981" stop-opacity="0"/></radialGradient>
+</defs>
+<style>
+  text{font-family:'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif}
+  .name{font-size:30px;font-weight:800;fill:url(#Ct)}
+  .desc{font-size:16px;fill:#c9d1d9}
+  .chip{font-family:'SFMono-Regular',Consolas,'Liberation Mono',monospace;font-size:12px;fill:#e6edf3}
+  .num{font-size:64px;font-weight:800;fill:#fff;fill-opacity:.06}
+  .cta{font-size:14px;font-weight:600;fill:#10b981}
+  .sweep{fill:none;stroke:url(#Ct);stroke-width:2.5;stroke-linecap:round;stroke-dasharray:70 930;animation:sw 6s linear infinite}
+  @keyframes sw{to{stroke-dashoffset:-1000}}
+  .arrow{animation:ar 1.6s ease-in-out infinite}@keyframes ar{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}
+  
+  .a{animation:wa 3s ease-in-out infinite}.b{animation:wa 3s ease-in-out 1.5s infinite}
+  @keyframes wa{0%,100%{opacity:.25}50%{opacity:.75}}
+  .pulse{transform-box:fill-box;transform-origin:center;animation:pl 2.4s ease-in-out infinite}
+  @keyframes pl{0%,100%{transform:scale(1)}50%{transform:scale(1.22)}}
+  .road{animation:rd 1.2s linear infinite}@keyframes rd{to{stroke-dashoffset:-11}}
+  .ping{transform-box:fill-box;transform-origin:center;animation:pg 2s ease-out infinite}
+  @keyframes pg{0%{transform:scale(.7);opacity:.9}100%{transform:scale(2.6);opacity:0}}
+  .blink{transform-box:fill-box;transform-origin:center;animation:bk 5s infinite}
+  @keyframes bk{0%,90%,100%{transform:scaleY(1)}94%{transform:scaleY(.08)}}
+  .spin{transform-box:fill-box;transform-origin:center;animation:sp 14s linear infinite}
+  .spinr{transform-box:fill-box;transform-origin:center;animation:sp 20s linear infinite reverse}
+  @keyframes sp{to{transform:rotate(360deg)}}
+  .brk{transform-box:fill-box;transform-origin:center;animation:bb 2.6s ease-in-out infinite}
+  @keyframes bb{0%,100%{transform:scale(1)}50%{transform:scale(.92)}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect x="1" y="1" width="898" height="148" rx="20" fill="url(#Cb)"/>
+<circle cx="825" cy="75" r="95" fill="url(#Chalo)"/>
+<rect x="1" y="1" width="898" height="148" rx="20" fill="none" stroke="#10b981" stroke-opacity=".3" stroke-width="1.5"/>
+<rect class="sweep" x="1" y="1" width="898" height="148" rx="20" pathLength="1000"/>
+<g transform="translate(770 20) scale(.9167)"><defs>
+    <linearGradient id="Cg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#10b981"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+    <radialGradient id="Cglow" cx=".5" cy=".5" r=".6"><stop offset="0" stop-color="#10b981" stop-opacity=".35"/><stop offset="1" stop-color="#10b981" stop-opacity="0"/></radialGradient>
+    <clipPath id="Cclip"><rect x="6" y="6" width="108" height="108" rx="24"/></clipPath>
+  </defs>
+  <rect width="120" height="120" rx="28" fill="#0a1128"/>
+  <rect width="120" height="120" rx="28" fill="url(#Cglow)"/>
+  <rect x="1" y="1" width="118" height="118" rx="27" fill="none" stroke="url(#Cg)" stroke-opacity=".65" stroke-width="2"/>
+  
+    <clipPath id="Cshield"><path d="M60 12L102 27V60C102 84 84 101 60 110 36 101 18 84 18 60V27Z"/></clipPath>
+    <path d="M60 12L102 27V60C102 84 84 101 60 110 36 101 18 84 18 60V27Z" fill="url(#Cg)" fill-opacity=".12" stroke="url(#Cg)" stroke-width="4" stroke-linejoin="round"/>
+    <g clip-path="url(#Cshield)" fill="none">
+      <path d="M60 116C30 96 92 82 60 62C44 52 70 44 62 30" stroke="#0f3b3a" stroke-width="13" stroke-linecap="round"/>
+      <path class="road" d="M60 116C30 96 92 82 60 62C44 52 70 44 62 30" stroke="#e6fffa" stroke-width="1.8" stroke-dasharray="5 6" stroke-linecap="round"/>
+    </g>
+    <circle class="ping" cx="62" cy="28" r="6" fill="none" stroke="url(#Cg)" stroke-width="2"/>
+    <circle cx="62" cy="28" r="4.5" fill="url(#Cg)"/></g>
+<text x="40" y="56" class="name">RaahPrahari</text>
+<text x="40" y="84" class="desc">Hill-road safety and community reports</text>
+<g><rect x="40" y="100" width="61" height="24" rx="12" fill="#10b981" fill-opacity=".12" stroke="#10b981" stroke-opacity=".4"/>
+      <text x="70.5" y="116" text-anchor="middle" class="chip">React</text></g><g><rect x="109" y="100" width="76" height="24" rx="12" fill="#10b981" fill-opacity=".12" stroke="#10b981" stroke-opacity=".4"/>
+      <text x="147" y="116" text-anchor="middle" class="chip">FastAPI</text></g><g><rect x="193" y="100" width="98" height="24" rx="12" fill="#10b981" fill-opacity=".12" stroke="#10b981" stroke-opacity=".4"/>
+      <text x="242" y="116" text-anchor="middle" class="chip">PostgreSQL</text></g>
+<text x="740" y="78" text-anchor="end" class="num">02</text>
+<text x="740" y="124" text-anchor="end" class="cta">View project <tspan class="arrow">→</tspan></text>
+</svg>
