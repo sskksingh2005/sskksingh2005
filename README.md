@@ -75,12 +75,12 @@
 <!-- ============ 6. CONTRIBUTIONS ============ -->
 <h3 align="center">📈 Contribution Activity</h3>
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=sskksingh2005&bg_color=0a1128&color=38bdf8&line=1e90ff&point=ffffff&area=true&hide_border=true" width="100%" />
+  <img src="assets/neon-divider.svg" width="100%" alt="" />
 </div>
-
 <div align="center">
-  <img src="https://raw.githubusercontent.com/sskksingh2005/sskksingh2005/output/github-contribution-grid-snake-dark.svg" width="100%" />
+  <img src="assets/contribution-activity.svg" width="100%" alt="GitHub contribution heatmap showing 136 contributions from November 16, 2025 through November 15, 2026." />
 </div>
+<p align="center"><sub><a href="https://github.com/users/sskksingh2005/contributions">View full GitHub contribution activity ↗</a></sub></p>
 
 <!-- ============ 7. CONNECT ============ -->
 <h3 align="center">🤝 Let's Connect</h3>
