@@ -17,43 +17,35 @@
   <img src="assets/stats-section.svg" width="100%" alt="GitHub stats, contribution streak and most used languages" />
 </div>
 <!-- ============ 4. FEATURED PROJECTS ============ -->
-### 🚀 Featured Projects
+<h3 align="center">🚀 Featured Projects</h3>
 
 <table width="100%" border="1" bordercolor="#26364f" frame="void" rules="all" cellpadding="14" cellspacing="8" bgcolor="#070d1d">
   <tr>
-    <td width="50%" valign="top" bgcolor="#0a1128">
-      <p><img src="assets/kalakriti (1).svg" width="92" height="92" align="left" hspace="12" alt="Kalakriti+ logo" />
-      <sub><strong>01 / ARTISAN MARKETPLACE</strong></sub><br/>
-      <strong><font color="#F59E0B">Kalakriti+</font></strong><br/>
-      AI-driven market-linkage platform for artisans.<br clear="left"/>
-      <code>React</code> <code>FastAPI</code> <code>PostgreSQL</code><br/>
-      <a href="https://github.com/sskksingh2005/Kalakriti-Plus"><strong>View repository &#8599;</strong></a></p>
+    <td width="50%" height="300" valign="top" bgcolor="#0a1128">
+      <p align="center"><img src="assets/kalakriti (1).svg" width="128" height="128" alt="Kalakriti+ logo" /></p>
+      <p align="center"><strong><font color="#58A6FF">Kalakriti+</font></strong><br/>
+      <font color="#C9D1D9">AI-driven market-linkage platform for artisans.</font></p>
+      <p align="center"><code>React</code> <code>FastAPI</code> <code>PostgreSQL</code></p>
     </td>
-    <td width="50%" valign="top" bgcolor="#0a1128">
-      <p><img src="assets/raahprahari (1).svg" width="92" height="92" align="left" hspace="12" alt="RaahPrahari logo" />
-      <sub><strong>02 / ROAD SAFETY</strong></sub><br/>
-      <strong><font color="#10B981">RaahPrahari</font></strong><br/>
-      Hill-road safety and community reports.<br clear="left"/>
-      <code>React</code> <code>FastAPI</code> <code>PostgreSQL</code><br/>
-      <a href="https://github.com/sskksingh2005/RaahPrahari"><strong>View repository &#8599;</strong></a></p>
+    <td width="50%" height="300" valign="top" bgcolor="#0a1128">
+      <p align="center"><img src="assets/raahprahari (1).svg" width="128" height="128" alt="RaahPrahari logo" /></p>
+      <p align="center"><strong><font color="#58A6FF">RaahPrahari</font></strong><br/>
+      <font color="#C9D1D9">Hill-road safety and community reports.</font></p>
+      <p align="center"><code>React</code> <code>FastAPI</code> <code>PostgreSQL</code></p>
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top" bgcolor="#0a1128">
-      <p><img src="assets/sakshya (1).svg" width="92" height="92" align="left" hspace="12" alt="Sakshya logo" />
-      <sub><strong>03 / EVIDENCE REPORTING</strong></sub><br/>
-      <strong><font color="#8B5CF6">Sakshya</font></strong><br/>
-      Silent reporting with SHA-256 evidence integrity.<br clear="left"/>
-      <code>React</code> <code>Node.js</code> <code>PostgreSQL</code><br/>
-      <a href="https://github.com/sskksingh2005/Sakshya"><strong>View repository &#8599;</strong></a></p>
+    <td width="50%" height="300" valign="top" bgcolor="#0a1128">
+      <p align="center"><img src="assets/sakshya (1).svg" width="128" height="128" alt="Sakshya logo" /></p>
+      <p align="center"><strong><font color="#58A6FF">Sakshya</font></strong><br/>
+      <font color="#C9D1D9">Silent reporting with SHA-256 evidence integrity.</font></p>
+      <p align="center"><code>React</code> <code>Node.js</code> <code>PostgreSQL</code></p>
     </td>
-    <td width="50%" valign="top" bgcolor="#0a1128">
-      <p><img src="assets/fixaura (1).svg" width="92" height="92" align="left" hspace="12" alt="FixAura logo" />
-      <sub><strong>04 / AI HOME REPAIR</strong></sub><br/>
-      <strong><font color="#38BDF8">FixAura</font></strong><br/>
-      AI home-repair assistant with AR guidance.<br clear="left"/>
-      <code>React</code> <code>OpenAI</code> <code>Tailwind</code><br/>
-      <a href="https://github.com/sskksingh2005/FixAura"><strong>View repository &#8599;</strong></a></p>
+    <td width="50%" height="300" valign="top" bgcolor="#0a1128">
+      <p align="center"><img src="assets/fixaura (1).svg" width="128" height="128" alt="FixAura logo" /></p>
+      <p align="center"><strong><font color="#58A6FF">FixAura</font></strong><br/>
+      <font color="#C9D1D9">AI home-repair assistant with AR guidance.</font></p>
+      <p align="center"><code>React</code> <code>OpenAI</code> <code>Tailwind</code></p>
     </td>
   </tr>
 </table>
