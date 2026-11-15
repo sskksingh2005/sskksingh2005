@@ -14,8 +14,23 @@
 <br/>
 
 <div align="center">
+  <img src="assets/neon-divider.svg" width="100%" alt="" />
+</div>
+
+<br/>
+
+<div align="center">
   <img src="assets/stats-section.svg" width="100%" alt="GitHub stats, contribution streak and most used languages" />
 </div>
+
+<br/>
+
+<div align="center">
+  <img src="assets/neon-divider.svg" width="100%" alt="" />
+</div>
+
+<br/>
+
 <!-- ============ 4. FEATURED PROJECTS ============ -->
 <h3 align="center">🚀 Featured Projects</h3>
 <hr color="#30363d" width="100%" />
