@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="12" viewBox="0 0 1200 12" preserveAspectRatio="none" role="img" aria-label="Cyan to violet section divider">
+  <defs>
+    <linearGradient id="sectionGradient" x1="0" y1="6" x2="1200" y2="6" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B1020" stop-opacity="0"/>
+      <stop offset="0.08" stop-color="#0B1020" stop-opacity="0.18"/>
+      <stop offset="0.2" stop-color="#00CFFF" stop-opacity="0.78"/>
+      <stop offset="0.5" stop-color="#398BFF" stop-opacity="0.82"/>
+      <stop offset="0.8" stop-color="#7865FF" stop-opacity="0.72"/>
+      <stop offset="0.92" stop-color="#0B1020" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#0B1020" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softGlow" x="-5%" y="-100%" width="110%" height="300%">
+      <feGaussianBlur stdDeviation="1.2" result="blur"/>
+      <feComponentTransfer in="blur" result="softBlur">
+        <feFuncA type="linear" slope="0.24"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="softBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <path d="M0 6H1200" stroke="url(#sectionGradient)" stroke-width="2" stroke-linecap="round" opacity="0.28" filter="url(#softGlow)"/>
+  <path d="M0 6H1200" stroke="url(#sectionGradient)" stroke-width="1.2" stroke-linecap="round"/>
+</svg>

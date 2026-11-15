@@ -4,6 +4,10 @@
 </div>
 
 <br/>
+<div align="center">
+  <img src="assets/section-divider.svg" width="100%" alt="" />
+</div>
+<br/>
 
 <!-- ============ 2. PROFILE CARD ============ -->
 <div align="center">
@@ -14,7 +18,7 @@
 <br/>
 
 <div align="center">
-  <img src="assets/neon-divider.svg" width="100%" alt="" />
+  <img src="assets/section-divider.svg" width="100%" alt="" />
 </div>
 
 <br/>
@@ -26,14 +30,13 @@
 <br/>
 
 <div align="center">
-  <img src="assets/neon-divider.svg" width="100%" alt="" />
+  <img src="assets/section-divider.svg" width="100%" alt="" />
 </div>
 
 <br/>
 
 <!-- ============ 4. FEATURED PROJECTS ============ -->
 <h3 align="center">🚀 Featured Projects</h3>
-<hr color="#30363d" width="100%" />
 
 <table align="center" width="650" border="1" bordercolor="#26364f" frame="void" rules="all" cellpadding="6" cellspacing="4" bgcolor="#070d1d">
   <tr>
@@ -66,21 +69,36 @@
   </tr>
 </table>
 
+<br/>
+<div align="center">
+  <img src="assets/section-divider.svg" width="100%" alt="" />
+</div>
+<br/>
+
 <!-- ============ 5. TECH STACK (one line) ============ -->
 <h3 align="center">🛠️ Tech Stack</h3>
 <div align="center">
   <img src="https://skillicons.dev/icons?i=java,py,js,react,nextjs,nodejs,express,supabase,postgres,docker,aws,git,tailwind,figma,vscode&perline=15" />
 </div>
 
+<br/>
+<div align="center">
+  <img src="assets/section-divider.svg" width="100%" alt="" />
+</div>
+<br/>
+
 <!-- ============ 6. CONTRIBUTIONS ============ -->
 <h3 align="center">📈 Contribution Activity</h3>
-<div align="center">
-  <img src="assets/neon-divider.svg" width="100%" alt="" />
-</div>
 <div align="center">
   <img src="assets/contribution-activity.svg" width="100%" alt="GitHub contribution heatmap showing 136 contributions from November 16, 2025 through November 15, 2026." />
 </div>
 <p align="center"><sub><a href="https://github.com/users/sskksingh2005/contributions">View full GitHub contribution activity ↗</a></sub></p>
+
+<br/>
+<div align="center">
+  <img src="assets/section-divider.svg" width="100%" alt="" />
+</div>
+<br/>
 
 <!-- ============ 7. CONNECT ============ -->
 <h3 align="center">🤝 Let's Connect</h3>
@@ -93,7 +111,11 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e90ff,50:0d47a1,100:0a1128&height=120&section=footer&text=Good%20Code%2C%20Brighter%20Tomorrows&fontSize=24&fontColor=ffffff&fontAlignY=65" width="100%" />
 
-
+<br/>
+<div align="center">
+  <img src="assets/section-divider.svg" width="100%" alt="" />
+</div>
+<br/>
 
 <h2 align="center">🐍 My GitHub Contribution Snake</h2>
 
