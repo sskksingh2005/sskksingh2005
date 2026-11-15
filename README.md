@@ -1,6 +1,6 @@
 <!-- ============ 1. BANNER ============ -->
 <div align="center">
-  <img src="assets/hero-banner-v2.svg" width="100%" alt="Swapnil Singh - Dream. Build. Create. Impact." />
+  <img src="assets/hero-banner-v2.svg" width="100%" height="240" alt="Swapnil Singh - Dream. Build. Create. Impact." />
 </div>
 
 <br/>
