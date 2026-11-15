@@ -20,33 +20,33 @@
 <h3 align="center">🚀 Featured Projects</h3>
 <hr color="#30363d" width="100%" />
 
-<table align="center" width="715" border="1" bordercolor="#26364f" frame="void" rules="all" cellpadding="8" cellspacing="6" bgcolor="#070d1d">
+<table align="center" width="650" border="1" bordercolor="#26364f" frame="void" rules="all" cellpadding="6" cellspacing="4" bgcolor="#070d1d">
   <tr>
-    <td width="50%" height="260" valign="top" bgcolor="#0a1128">
-      <p align="center"><img src="assets/kalakriti (1).svg" width="120" height="120" alt="Kalakriti+ logo" /></p>
-      <p align="center"><strong><font color="#58A6FF">Kalakriti+</font></strong><br/>
-      <font color="#C9D1D9">AI-driven market-linkage platform for artisans.</font></p>
-      <p align="center"><code>React</code> <code>FastAPI</code> <code>PostgreSQL</code></p>
+    <td width="50%" height="220" valign="top" bgcolor="#0a1128">
+      <p align="center"><img src="assets/kalakriti (1).svg" width="90" height="90" alt="Kalakriti+ logo" /><br/>
+      <strong><font color="#58A6FF">Kalakriti+</font></strong><br/>
+      <small><font color="#C9D1D9">AI-driven market-linkage platform for artisans.</font></small><br/>
+      <small><code>React</code> <code>FastAPI</code> <code>PostgreSQL</code></small></p>
     </td>
-    <td width="50%" height="260" valign="top" bgcolor="#0a1128">
-      <p align="center"><img src="assets/raahprahari (1).svg" width="120" height="120" alt="RaahPrahari logo" /></p>
-      <p align="center"><strong><font color="#58A6FF">RaahPrahari</font></strong><br/>
-      <font color="#C9D1D9">Hill-road safety and community reports.</font></p>
-      <p align="center"><code>React</code> <code>FastAPI</code> <code>PostgreSQL</code></p>
+    <td width="50%" height="220" valign="top" bgcolor="#0a1128">
+      <p align="center"><img src="assets/raahprahari (1).svg" width="90" height="90" alt="RaahPrahari logo" /><br/>
+      <strong><font color="#58A6FF">RaahPrahari</font></strong><br/>
+      <small><font color="#C9D1D9">Hill-road safety and community reports.</font></small><br/>
+      <small><code>React</code> <code>FastAPI</code> <code>PostgreSQL</code></small></p>
     </td>
   </tr>
   <tr>
-    <td width="50%" height="260" valign="top" bgcolor="#0a1128">
-      <p align="center"><img src="assets/sakshya (1).svg" width="120" height="120" alt="Sakshya logo" /></p>
-      <p align="center"><strong><font color="#58A6FF">Sakshya</font></strong><br/>
-      <font color="#C9D1D9">Silent reporting with SHA-256 evidence integrity.</font></p>
-      <p align="center"><code>React</code> <code>Node.js</code> <code>PostgreSQL</code></p>
+    <td width="50%" height="220" valign="top" bgcolor="#0a1128">
+      <p align="center"><img src="assets/sakshya (1).svg" width="90" height="90" alt="Sakshya logo" /><br/>
+      <strong><font color="#58A6FF">Sakshya</font></strong><br/>
+      <small><font color="#C9D1D9">Silent reporting with SHA-256 evidence integrity.</font></small><br/>
+      <small><code>React</code> <code>Node.js</code> <code>PostgreSQL</code></small></p>
     </td>
-    <td width="50%" height="260" valign="top" bgcolor="#0a1128">
-      <p align="center"><img src="assets/fixaura (1).svg" width="120" height="120" alt="FixAura logo" /></p>
-      <p align="center"><strong><font color="#58A6FF">FixAura</font></strong><br/>
-      <font color="#C9D1D9">AI home-repair assistant with AR guidance.</font></p>
-      <p align="center"><code>React</code> <code>OpenAI</code> <code>Tailwind</code></p>
+    <td width="50%" height="220" valign="top" bgcolor="#0a1128">
+      <p align="center"><img src="assets/fixaura (1).svg" width="90" height="90" alt="FixAura logo" /><br/>
+      <strong><font color="#58A6FF">FixAura</font></strong><br/>
+      <small><font color="#C9D1D9">AI home-repair assistant with AR guidance.</font></small><br/>
+      <small><code>React</code> <code>OpenAI</code> <code>Tailwind</code></small></p>
     </td>
   </tr>
 </table>
