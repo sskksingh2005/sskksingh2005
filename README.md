@@ -95,15 +95,19 @@
 <br/>
 
 <!-- ============ 7. CONTRIBUTIONS ============ -->
+
 <h2 align="center">🐍 My GitHub Contribution Snake</h2>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/sskksingh2005/sskksingh2005/output/github-snake.svg" alt="GitHub Contribution Snake" />
-</p>
-<br/>
-<div align="center">
-  <img src="assets/section-divider.svg" width="100%" alt="" />
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/sskksingh2005/sskksingh2005/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/sskksingh2005/sskksingh2005/output/github-contribution-grid-snake.svg" />
+  <img alt="GitHub Contribution Snake"
+    src="https://raw.githubusercontent.com/sskksingh2005/sskksingh2005/output/github-contribution-grid-snake.svg"
+    width="100%" />
+</picture>
+
 <br/>
 
 <!-- ============ 8. CONNECT ============ -->
