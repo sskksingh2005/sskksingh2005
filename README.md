@@ -19,7 +19,7 @@
 <!-- ============ 4. FEATURED PROJECTS ============ -->
 <h3 align="center">🚀 Featured Projects</h3>
 
-<table width="100%" border="1" bordercolor="#26364f" frame="void" rules="all" cellpadding="14" cellspacing="8" bgcolor="#070d1d">
+<table align="center" width="100%" border="1" bordercolor="#26364f" frame="void" rules="all" cellpadding="14" cellspacing="8" bgcolor="#070d1d">
   <tr>
     <td width="50%" height="300" valign="top" bgcolor="#0a1128">
       <p align="center"><img src="assets/kalakriti (1).svg" width="128" height="128" alt="Kalakriti+ logo" /></p>
