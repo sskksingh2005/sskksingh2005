@@ -5,18 +5,6 @@
 
 <br/>
 
-<!-- ============ 2. PROFILE CARD ============ -->
-<div align="center">
-  <img src="assets/profile-card.svg" width="100%" alt="Swapnil Singh - CSE Student | Builder | Learner" />
-</div>
-
-<div align="center">
-  <a href="https://linkedin.com/in/sskksingh"><img src="assets/btn-connect.svg" height="50" alt="Connect on LinkedIn" /></a>
-  &nbsp;&nbsp;
-  <a href="mailto:swapnilsingh2005@gmail.com"><img src="assets/btn-message.svg" height="50" alt="Email me" /></a>
-</div>
-
-<br/>
 
 <div align="center">
   <img src="assets/stats-section.svg" width="100%" alt="GitHub stats, contribution streak and most used languages" />
