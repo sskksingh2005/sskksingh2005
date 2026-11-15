@@ -81,6 +81,13 @@
   <img src="https://skillicons.dev/icons?i=java,py,js,react,nextjs,nodejs,express,supabase,postgres,docker,aws,git,tailwind,figma,vscode&perline=15" />
 </div>
 
+<!-- ============ SKILLS ============ -->
+<h3 align="center">🎯 Skills</h3>
+<hr color="#30363d" width="100%" />
+<p align="center">
+  <img src="assets/skills-badges.svg" width="100%" alt="DSA, SYSTEM DESIGN, PROBLEM SOLVING, DATA ANALYSIS, MACHINE LEARNING, FULL STACK, TEAMWORK, CREATIVITY" />
+</p>
+
 <br/>
 <div align="center">
   <img src="assets/section-divider.svg" width="100%" alt="" />
