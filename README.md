@@ -16,28 +16,83 @@
 <div align="center">
   <img src="assets/stats-section.svg" width="100%" alt="GitHub stats, contribution streak and most used languages" />
 </div>
-<!-- ============ 4. FEATURED PROJECTS (3 side by side) ============ -->
+<!-- ============ 4. FEATURED PROJECTS ============ -->
 ### 🚀 Featured Projects
 
-### 🚀 Featured Projects
-
-<div align="center">
-  <a href="https://github.com/sskksingh2005/Kalakriti-Plus">
-    <img src="assets/kalakriti.svg" width="100%" alt="Kalakriti+" />
-  </a>
-
-  <a href="https://github.com/sskksingh2005/RaahPrahari">
-    <img src="assets/raahprahari.svg" width="100%" alt="RaahPrahari" />
-  </a>
-
-  <a href="https://github.com/sskksingh2005/Sakshya">
-    <img src="assets/sakshya.svg" width="100%" alt="Sakshya" />
-  </a>
-
-  <a href="https://github.com/sskksingh2005/FixAura">
-    <img src="assets/fixaura.svg" width="100%" alt="FixAura" />
-  </a>
-</div>
+<table width="100%" border="0" cellpadding="8" cellspacing="8">
+  <tr>
+    <td width="50%" valign="top">
+      <table width="100%" border="1" bordercolor="#26364f" cellpadding="12" cellspacing="0" bgcolor="#0a1128">
+        <tr><td>
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="58" valign="top"><img src="assets/kalakriti (1).svg" width="48" alt="Kalakriti+ logo" /></td>
+              <td valign="top"><sub><strong>01 / ARTISAN MARKETPLACE</strong></sub><br/><h3><font color="#F59E0B">Kalakriti+</font></h3></td>
+            </tr>
+            <tr><td colspan="2">
+              <p>AI-driven market-linkage platform for artisans.</p>
+              <p><code>React</code> <code>FastAPI</code> <code>PostgreSQL</code></p>
+              <p><a href="https://github.com/sskksingh2005/Kalakriti-Plus"><strong>View repository &#8599;</strong></a></p>
+            </td></tr>
+          </table>
+        </td></tr>
+      </table>
+    </td>
+    <td width="50%" valign="top">
+      <table width="100%" border="1" bordercolor="#26364f" cellpadding="12" cellspacing="0" bgcolor="#0a1128">
+        <tr><td>
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="58" valign="top"><img src="assets/raahprahari (1).svg" width="48" alt="RaahPrahari logo" /></td>
+              <td valign="top"><sub><strong>02 / ROAD SAFETY</strong></sub><br/><h3><font color="#10B981">RaahPrahari</font></h3></td>
+            </tr>
+            <tr><td colspan="2">
+              <p>Hill-road safety and community reports.</p>
+              <p><code>React</code> <code>FastAPI</code> <code>PostgreSQL</code></p>
+              <p><a href="https://github.com/sskksingh2005/RaahPrahari"><strong>View repository &#8599;</strong></a></p>
+            </td></tr>
+          </table>
+        </td></tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <table width="100%" border="1" bordercolor="#26364f" cellpadding="12" cellspacing="0" bgcolor="#0a1128">
+        <tr><td>
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="58" valign="top"><img src="assets/sakshya (1).svg" width="48" alt="Sakshya logo" /></td>
+              <td valign="top"><sub><strong>03 / EVIDENCE REPORTING</strong></sub><br/><h3><font color="#8B5CF6">Sakshya</font></h3></td>
+            </tr>
+            <tr><td colspan="2">
+              <p>Silent reporting with SHA-256 evidence integrity.</p>
+              <p><code>React</code> <code>Node.js</code> <code>PostgreSQL</code></p>
+              <p><a href="https://github.com/sskksingh2005/Sakshya"><strong>View repository &#8599;</strong></a></p>
+            </td></tr>
+          </table>
+        </td></tr>
+      </table>
+    </td>
+    <td width="50%" valign="top">
+      <table width="100%" border="1" bordercolor="#26364f" cellpadding="12" cellspacing="0" bgcolor="#0a1128">
+        <tr><td>
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="58" valign="top"><img src="assets/fixaura (1).svg" width="48" alt="FixAura logo" /></td>
+              <td valign="top"><sub><strong>04 / AI HOME REPAIR</strong></sub><br/><h3><font color="#38BDF8">FixAura</font></h3></td>
+            </tr>
+            <tr><td colspan="2">
+              <p>AI home-repair assistant with AR guidance.</p>
+              <p><code>React</code> <code>OpenAI</code> <code>Tailwind</code></p>
+              <p><a href="https://github.com/sskksingh2005/FixAura"><strong>View repository &#8599;</strong></a></p>
+            </td></tr>
+          </table>
+        </td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
 
 <!-- ============ 5. TECH STACK (one line) ============ -->
 <h3 align="center">🛠️ Tech Stack</h3>
