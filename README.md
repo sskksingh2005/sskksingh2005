@@ -19,77 +19,41 @@
 <!-- ============ 4. FEATURED PROJECTS ============ -->
 ### 🚀 Featured Projects
 
-<table width="100%" border="0" cellpadding="8" cellspacing="8">
+<table width="100%" border="1" bordercolor="#26364f" frame="void" rules="all" cellpadding="14" cellspacing="8" bgcolor="#070d1d">
   <tr>
-    <td width="50%" valign="top">
-      <table width="100%" border="1" bordercolor="#26364f" cellpadding="12" cellspacing="0" bgcolor="#0a1128">
-        <tr><td>
-          <table width="100%" border="0" cellpadding="0" cellspacing="0">
-            <tr>
-              <td width="58" valign="top"><img src="assets/kalakriti (1).svg" width="48" alt="Kalakriti+ logo" /></td>
-              <td valign="top"><sub><strong>01 / ARTISAN MARKETPLACE</strong></sub><br/><h3><font color="#F59E0B">Kalakriti+</font></h3></td>
-            </tr>
-            <tr><td colspan="2">
-              <p>AI-driven market-linkage platform for artisans.</p>
-              <p><code>React</code> <code>FastAPI</code> <code>PostgreSQL</code></p>
-              <p><a href="https://github.com/sskksingh2005/Kalakriti-Plus"><strong>View repository &#8599;</strong></a></p>
-            </td></tr>
-          </table>
-        </td></tr>
-      </table>
+    <td width="50%" valign="top" bgcolor="#0a1128">
+      <p><img src="assets/kalakriti (1).svg" width="92" height="92" align="left" hspace="12" alt="Kalakriti+ logo" />
+      <sub><strong>01 / ARTISAN MARKETPLACE</strong></sub><br/>
+      <strong><font color="#F59E0B">Kalakriti+</font></strong><br/>
+      AI-driven market-linkage platform for artisans.<br clear="left"/>
+      <code>React</code> <code>FastAPI</code> <code>PostgreSQL</code><br/>
+      <a href="https://github.com/sskksingh2005/Kalakriti-Plus"><strong>View repository &#8599;</strong></a></p>
     </td>
-    <td width="50%" valign="top">
-      <table width="100%" border="1" bordercolor="#26364f" cellpadding="12" cellspacing="0" bgcolor="#0a1128">
-        <tr><td>
-          <table width="100%" border="0" cellpadding="0" cellspacing="0">
-            <tr>
-              <td width="58" valign="top"><img src="assets/raahprahari (1).svg" width="48" alt="RaahPrahari logo" /></td>
-              <td valign="top"><sub><strong>02 / ROAD SAFETY</strong></sub><br/><h3><font color="#10B981">RaahPrahari</font></h3></td>
-            </tr>
-            <tr><td colspan="2">
-              <p>Hill-road safety and community reports.</p>
-              <p><code>React</code> <code>FastAPI</code> <code>PostgreSQL</code></p>
-              <p><a href="https://github.com/sskksingh2005/RaahPrahari"><strong>View repository &#8599;</strong></a></p>
-            </td></tr>
-          </table>
-        </td></tr>
-      </table>
+    <td width="50%" valign="top" bgcolor="#0a1128">
+      <p><img src="assets/raahprahari (1).svg" width="92" height="92" align="left" hspace="12" alt="RaahPrahari logo" />
+      <sub><strong>02 / ROAD SAFETY</strong></sub><br/>
+      <strong><font color="#10B981">RaahPrahari</font></strong><br/>
+      Hill-road safety and community reports.<br clear="left"/>
+      <code>React</code> <code>FastAPI</code> <code>PostgreSQL</code><br/>
+      <a href="https://github.com/sskksingh2005/RaahPrahari"><strong>View repository &#8599;</strong></a></p>
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top">
-      <table width="100%" border="1" bordercolor="#26364f" cellpadding="12" cellspacing="0" bgcolor="#0a1128">
-        <tr><td>
-          <table width="100%" border="0" cellpadding="0" cellspacing="0">
-            <tr>
-              <td width="58" valign="top"><img src="assets/sakshya (1).svg" width="48" alt="Sakshya logo" /></td>
-              <td valign="top"><sub><strong>03 / EVIDENCE REPORTING</strong></sub><br/><h3><font color="#8B5CF6">Sakshya</font></h3></td>
-            </tr>
-            <tr><td colspan="2">
-              <p>Silent reporting with SHA-256 evidence integrity.</p>
-              <p><code>React</code> <code>Node.js</code> <code>PostgreSQL</code></p>
-              <p><a href="https://github.com/sskksingh2005/Sakshya"><strong>View repository &#8599;</strong></a></p>
-            </td></tr>
-          </table>
-        </td></tr>
-      </table>
+    <td width="50%" valign="top" bgcolor="#0a1128">
+      <p><img src="assets/sakshya (1).svg" width="92" height="92" align="left" hspace="12" alt="Sakshya logo" />
+      <sub><strong>03 / EVIDENCE REPORTING</strong></sub><br/>
+      <strong><font color="#8B5CF6">Sakshya</font></strong><br/>
+      Silent reporting with SHA-256 evidence integrity.<br clear="left"/>
+      <code>React</code> <code>Node.js</code> <code>PostgreSQL</code><br/>
+      <a href="https://github.com/sskksingh2005/Sakshya"><strong>View repository &#8599;</strong></a></p>
     </td>
-    <td width="50%" valign="top">
-      <table width="100%" border="1" bordercolor="#26364f" cellpadding="12" cellspacing="0" bgcolor="#0a1128">
-        <tr><td>
-          <table width="100%" border="0" cellpadding="0" cellspacing="0">
-            <tr>
-              <td width="58" valign="top"><img src="assets/fixaura (1).svg" width="48" alt="FixAura logo" /></td>
-              <td valign="top"><sub><strong>04 / AI HOME REPAIR</strong></sub><br/><h3><font color="#38BDF8">FixAura</font></h3></td>
-            </tr>
-            <tr><td colspan="2">
-              <p>AI home-repair assistant with AR guidance.</p>
-              <p><code>React</code> <code>OpenAI</code> <code>Tailwind</code></p>
-              <p><a href="https://github.com/sskksingh2005/FixAura"><strong>View repository &#8599;</strong></a></p>
-            </td></tr>
-          </table>
-        </td></tr>
-      </table>
+    <td width="50%" valign="top" bgcolor="#0a1128">
+      <p><img src="assets/fixaura (1).svg" width="92" height="92" align="left" hspace="12" alt="FixAura logo" />
+      <sub><strong>04 / AI HOME REPAIR</strong></sub><br/>
+      <strong><font color="#38BDF8">FixAura</font></strong><br/>
+      AI home-repair assistant with AR guidance.<br clear="left"/>
+      <code>React</code> <code>OpenAI</code> <code>Tailwind</code><br/>
+      <a href="https://github.com/sskksingh2005/FixAura"><strong>View repository &#8599;</strong></a></p>
     </td>
   </tr>
 </table>
