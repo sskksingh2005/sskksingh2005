@@ -95,12 +95,11 @@
 <br/>
 
 <!-- ============ 6. CONTRIBUTIONS ============ -->
-<h3 align="center">📈 Contribution Activity</h3>
-<div align="center">
-  <img src="assets/contribution-activity.svg" width="100%" alt="GitHub contribution heatmap showing 136 contributions from November 16, 2025 through November 15, 2026." />
-</div>
-<p align="center"><sub><a href="https://github.com/users/sskksingh2005/contributions">View full GitHub contribution activity ↗</a></sub></p>
+<h2 align="center">🐍 My GitHub Contribution Snake</h2>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/sskksingh2005/sskksingh2005/output/github-snake.svg" alt="GitHub Contribution Snake" />
+</p>
 <br/>
 <div align="center">
   <img src="assets/section-divider.svg" width="100%" alt="" />
@@ -130,7 +129,7 @@
   <img src="https://raw.githubusercontent.com/sskksingh2005/sskksingh2005/output/github-snake.svg" alt="GitHub Contribution Snake" />
 </p>
 <br/>
-<!-- ============ 6. CONTRIBUTIONS ============ -->
+<!-- ============ 8. CONTRIBUTIONS ============ -->
 <h3 align="center">📈 Contribution Activity</h3>
 <div align="center">
   <img src="assets/contribution-activity.svg" width="100%" alt="GitHub contribution heatmap showing 136 contributions from November 16, 2025 through November 15, 2026." />
