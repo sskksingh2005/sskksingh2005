@@ -81,7 +81,7 @@
   <img src="https://skillicons.dev/icons?i=java,py,js,react,nextjs,nodejs,express,supabase,postgres,docker,aws,git,tailwind,figma,vscode&perline=15" />
 </div>
 
-<!-- ============ SKILLS ============ -->
+<!-- ============ 6. SKILLS ============ -->
 <h3 align="center">🎯 Skills</h3>
 <hr color="#30363d" width="100%" />
 <p align="center">
@@ -94,7 +94,7 @@
 </div>
 <br/>
 
-<!-- ============ 6. CONTRIBUTIONS ============ -->
+<!-- ============ 7. CONTRIBUTIONS ============ -->
 <h2 align="center">🐍 My GitHub Contribution Snake</h2>
 
 <p align="center">
@@ -106,7 +106,7 @@
 </div>
 <br/>
 
-<!-- ============ 7. CONNECT ============ -->
+<!-- ============ 8. CONNECT ============ -->
 <h3 align="center">🤝 Let's Connect</h3>
 <div align="center">
   <a href="https://linkedin.com/in/YOUR_LINKEDIN_ID"><img src="https://img.shields.io/badge/LinkedIn-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
@@ -123,13 +123,7 @@
 </div>
 <br/>
 
-<h2 align="center">🐍 My GitHub Contribution Snake</h2>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/sskksingh2005/sskksingh2005/output/github-snake.svg" alt="GitHub Contribution Snake" />
-</p>
-<br/>
-<!-- ============ 8. CONTRIBUTIONS ============ -->
+<!-- ============ 9. CONTRIBUTIONS ============ -->
 <h3 align="center">📈 Contribution Activity</h3>
 <div align="center">
   <img src="assets/contribution-activity.svg" width="100%" alt="GitHub contribution heatmap showing 136 contributions from November 16, 2025 through November 15, 2026." />
